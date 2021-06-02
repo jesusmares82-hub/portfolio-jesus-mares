@@ -76,6 +76,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--white);
+}
+
 h1,
 h2 {
   font-weight: 600;
@@ -305,7 +309,7 @@ background Circles
   height: 60px;
   width: 60px;
   background-color: var(--blue);
-  left: -30%;
+  left: -20%;
   top: 10%;
   opacity: 0.3;
   animation: zooInOut 8s linear infinite;
@@ -325,7 +329,7 @@ background Circles
   height: 130px;
   width: 130px;
   background-color: var(--white);
-  left: 125%;
+  left: 112%;
   top: 35%;
   opacity: 0.6;
   animation: bounceTop 8s linear infinite;
@@ -335,7 +339,7 @@ background Circles
   height: 70px;
   width: 70px;
   background-color: var(--orange);
-  left: -42%;
+  left: -28%;
   top: 75%;
   opacity: 0.6;
   animation: zooInOut 8s linear infinite;
@@ -922,8 +926,12 @@ Portfolio Popup
 }
 
 .pp-body .general-info li a {
-  text-transform: lowercase;
+  text-transform: capitalize;
   color: var(--main-color);
+}
+
+.pp-body .general-info li a:hover {
+  color: var(--white);
 }
 
 /* ---------------

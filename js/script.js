@@ -126,7 +126,9 @@ function handleSubmit(event) {
     "href",
     `mailto:jesusmares82@gmail.com?subject= ${form.get(
       "subject"
-    )}&body=${form.get("message")}`
+    )}&body= Name: ${form.get("name")} Email: ${form.get(
+      "email"
+    )}  Message: ${form.get("message")}`
   );
   $buttonMailto.click();
 }
