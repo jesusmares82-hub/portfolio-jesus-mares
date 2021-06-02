@@ -111,3 +111,22 @@ function portfolioItemDetails(portfolioItem) {
     ".portfolio-item-details"
   ).innerHTML;
 }
+
+/* ------ Form Contact ------ */
+
+const $form = document.querySelector("#form");
+const $buttonMailto = document.querySelector("#trucazo");
+
+$form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const form = new FormData(this);
+  $buttonMailto.setAttribute(
+    "href",
+    `mailto:jesusmares82@gmail.com?subject= ${form.get(
+      "subject"
+    )}&body=${form.get("message")}`
+  );
+  $buttonMailto.click();
+}

@@ -106,8 +106,8 @@
               <p>
                 Hi, My name is Jesús Mares 👋. I'm a Front End Engineer based in
                 Mexico City ☀️. I describe myself as a passionate developer who
-                loves coding, open source, and the web platform ❤️..
-                My Portfolio is powered by  VS Code and coffee ☕ ..
+                loves coding, open source, and the web platform ❤️.. My
+                Portfolio is powered by VS Code and coffee ☕ ..
               </p>
               <h3>skills</h3>
               <div class="skills">
@@ -536,10 +536,12 @@
           </div>
           <div class="row">
             <div class="contact-form">
-              <form>
+              <form id="form" action="" class="form">
                 <div class="row">
                   <div class="input-group">
                     <input
+                      name="name"
+                      id="name"
                       type="text"
                       placeholder="Name"
                       class="input-control"
@@ -548,6 +550,8 @@
                   </div>
                   <div class="input-group">
                     <input
+                      name="email"
+                      id="email"
                       type="text"
                       placeholder="Email"
                       class="input-control"
@@ -556,6 +560,8 @@
                   </div>
                   <div class="input-group">
                     <input
+                      name="subject"
+                      id="subject"
                       type="text"
                       placeholder="Subject"
                       class="input-control"
@@ -564,6 +570,8 @@
                   </div>
                   <div class="input-group">
                     <textarea
+                      name="message"
+                      id="message"
                       placeholder="Message"
                       class="input-control"
                       required
@@ -574,6 +582,12 @@
                   </div>
                 </div>
               </form>
+              <a
+                href="mailto:jesusmares82@gmail.com"
+                id="trucazo"
+                style="visibility: hidden; width: 0px"
+                >send message</a
+              >
             </div>
             <div class="contact-info">
               <div class="contact-info-item">
